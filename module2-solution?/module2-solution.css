@@ -1,1 +1,67 @@
+body {
+    font-family: sans-serif;
+}
 
+h1 { 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.section {
+    display: inline-block;
+    background-color: #c0cbb3;
+    border: 1px black;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.section-title { 
+    float: right;
+    margin-left: auto; 
+    margin-bottom: 10px;
+    top: 0px;
+    right: 0px;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-weight: bold;
+    clear: both;
+
+}
+
+@media (min-width: 992px) {
+    .section {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+}
+
+ .section:list-of-type {
+        margin-right: 0;
+    }
+}
+ 
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+    width: 45%;
+    float: left;
+    margin-right: 4%;
+}
+
+ .section:nth-of-type(2n) {
+        margin-right: 0;
+        clear: both;
+    }
+}
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+        float: none; 
+        margin-right: 0;
+    }
+}
